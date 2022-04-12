@@ -1,0 +1,9 @@
+[Nemo Action]
+Active=true
+Name=Copy path
+Comment=Copy path to clipboard
+Exec=sh -c "echo -n %F | xclip -selection clipboard"
+Icon-Name=link
+Selection=one
+Extensions=any;
+Quote=double
