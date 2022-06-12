@@ -2,8 +2,9 @@
 Active=true
 Name=Copy path
 Comment=Copy path to clipboard
-Exec=sh -c "echo -n %F | xclip -selection clipboard"
+Exec=sh -c "echo '%F' | xclip -selection clipboard -rmlastnl"
 Icon-Name=link
 Selection=one
 Extensions=any;
-Quote=double
+Quote=backquote
+Dependency=xclip
